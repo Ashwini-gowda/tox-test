@@ -1,0 +1,15 @@
+action: py35, msg: getenv
+cwd: /home/nighthack/test_tox
+cmd: /home/nighthack/test_tox/.tox/py35/bin/python -m pip install flake8
+Collecting flake8
+  Using cached flake8-3.7.9-py2.py3-none-any.whl (69 kB)
+Collecting pycodestyle<2.6.0,>=2.5.0
+  Using cached pycodestyle-2.5.0-py2.py3-none-any.whl (51 kB)
+Collecting mccabe<0.7.0,>=0.6.0
+  Using cached mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+Collecting pyflakes<2.2.0,>=2.1.0
+  Using cached pyflakes-2.1.1-py2.py3-none-any.whl (59 kB)
+Collecting entrypoints<0.4.0,>=0.3.0
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pycodestyle, mccabe, pyflakes, entrypoints, flake8
+Successfully installed entrypoints-0.3 flake8-3.7.9 mccabe-0.6.1 pycodestyle-2.5.0 pyflakes-2.1.1

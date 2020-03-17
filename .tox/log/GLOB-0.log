@@ -1,0 +1,40 @@
+action: GLOB, msg: packaging
+cwd: /home/nighthack/test_tox
+cmd: /home/nighthack/miniconda3/bin/python setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+creating sample.egg-info
+writing sample.egg-info/PKG-INFO
+writing dependency_links to sample.egg-info/dependency_links.txt
+writing top-level names to sample.egg-info/top_level.txt
+writing manifest file 'sample.egg-info/SOURCES.txt'
+reading manifest file 'sample.egg-info/SOURCES.txt'
+writing manifest file 'sample.egg-info/SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+
+creating sample-1.0.0
+creating sample-1.0.0/sample.egg-info
+copying files to sample-1.0.0...
+copying README.md -> sample-1.0.0
+copying setup.cfg -> sample-1.0.0
+copying setup.py -> sample-1.0.0
+copying sample.egg-info/PKG-INFO -> sample-1.0.0/sample.egg-info
+copying sample.egg-info/SOURCES.txt -> sample-1.0.0/sample.egg-info
+copying sample.egg-info/dependency_links.txt -> sample-1.0.0/sample.egg-info
+copying sample.egg-info/top_level.txt -> sample-1.0.0/sample.egg-info
+Writing sample-1.0.0/setup.cfg
+creating '.tox/dist/sample-1.0.0.zip' and adding 'sample-1.0.0' to it
+adding 'sample-1.0.0'
+adding 'sample-1.0.0/sample.egg-info'
+adding 'sample-1.0.0/setup.cfg'
+adding 'sample-1.0.0/setup.py'
+adding 'sample-1.0.0/README.md'
+adding 'sample-1.0.0/PKG-INFO'
+adding 'sample-1.0.0/sample.egg-info/top_level.txt'
+adding 'sample-1.0.0/sample.egg-info/SOURCES.txt'
+adding 'sample-1.0.0/sample.egg-info/dependency_links.txt'
+adding 'sample-1.0.0/sample.egg-info/PKG-INFO'
+removing 'sample-1.0.0' (and everything under it)

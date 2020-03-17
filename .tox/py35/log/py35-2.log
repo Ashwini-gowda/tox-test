@@ -1,0 +1,32 @@
+action: py35, msg: installpkg
+cwd: /home/nighthack/test_tox
+cmd: /home/nighthack/test_tox/.tox/py35/bin/python -m pip install --exists-action w .tox/.tmp/package/1/sample-1.0.0.zip
+Processing ./.tox/.tmp/package/1/sample-1.0.0.zip
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: /home/nighthack/test_tox/.tox/py35/bin/python /home/nighthack/test_tox/.tox/py35/lib/python3.5/site-packages/pip/_vendor/pep517/_in_process.py prepare_metadata_for_build_wheel /tmp/tmpkl4n43xm
+         cwd: /tmp/pip-req-build-6bvdk1xk
+    Complete output (16 lines):
+    Traceback (most recent call last):
+      File "/home/nighthack/test_tox/.tox/py35/lib/python3.5/site-packages/pip/_vendor/pep517/_in_process.py", line 257, in <module>
+        main()
+      File "/home/nighthack/test_tox/.tox/py35/lib/python3.5/site-packages/pip/_vendor/pep517/_in_process.py", line 240, in main
+        json_out['return_val'] = hook(**hook_input['kwargs'])
+      File "/home/nighthack/test_tox/.tox/py35/lib/python3.5/site-packages/pip/_vendor/pep517/_in_process.py", line 110, in prepare_metadata_for_build_wheel
+        return hook(metadata_directory, config_settings)
+      File "/tmp/pip-build-env-ywbh_qve/overlay/lib/python3.5/site-packages/poetry/masonry/api.py", line 39, in prepare_metadata_for_build_wheel
+        builder = WheelBuilder(poetry, SystemEnv(Path(sys.prefix)), NullIO())
+      File "/tmp/pip-build-env-ywbh_qve/overlay/lib/python3.5/site-packages/poetry/masonry/builders/wheel.py", line 44, in __init__
+        super(WheelBuilder, self).__init__(poetry, env, io)
+      File "/tmp/pip-build-env-ywbh_qve/overlay/lib/python3.5/site-packages/poetry/masonry/builders/builder.py", line 69, in __init__
+        includes=self._package.include,
+      File "/tmp/pip-build-env-ywbh_qve/overlay/lib/python3.5/site-packages/poetry/masonry/utils/module.py", line 59, in __init__
+        "No file/folder found for package {}".format(name)
+    poetry.masonry.utils.module.ModuleOrPackageNotFound: No file/folder found for package graphene-pydantic
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /home/nighthack/test_tox/.tox/py35/bin/python /home/nighthack/test_tox/.tox/py35/lib/python3.5/site-packages/pip/_vendor/pep517/_in_process.py prepare_metadata_for_build_wheel /tmp/tmpkl4n43xm Check the logs for full command output.

@@ -1,0 +1,7 @@
+action: py35, msg: getenv
+cwd: /home/nighthack/test_tox/.tox
+cmd: /home/nighthack/miniconda3/bin/python -m virtualenv --no-download --python /usr/bin/python3.5 py35
+created virtual environment CPython3.5.2.final.0-64 in 701ms
+  creator CPython3Posix(dest=/home/nighthack/test_tox/.tox/py35, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/home/nighthack/.local/share/virtualenv/seed-app-data/v1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator

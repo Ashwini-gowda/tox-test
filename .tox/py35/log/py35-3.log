@@ -1,0 +1,16 @@
+action: py35, msg: installpkg
+cwd: /home/nighthack/test_tox
+cmd: /home/nighthack/test_tox/.tox/py35/bin/python -m pip install --no-deps -U .tox/.tmp/package/1/sample-1.0.0.zip
+Processing ./.tox/.tmp/package/1/sample-1.0.0.zip
+Building wheels for collected packages: sample
+  Building wheel for sample (setup.py): started
+  Building wheel for sample (setup.py): finished with status 'done'
+  Created wheel for sample: filename=sample-1.0.0-py2.py3-none-any.whl size=997 sha256=2d5e8458e34dd421dd26257a8447075c6c944d25cdcba86f74142db349ea8728
+  Stored in directory: /home/nighthack/.cache/pip/wheels/38/27/36/edbc8eb25462eff60dab166ea6383397fdf91d9eb3802270c2
+Successfully built sample
+Installing collected packages: sample
+  Attempting uninstall: sample
+    Found existing installation: sample 1.0.0
+    Not uninstalling sample at /home/nighthack/test_tox, outside environment /home/nighthack/test_tox/.tox/py35
+    Can't uninstall 'sample'. No files were found to uninstall.
+Successfully installed sample-1.0.0
